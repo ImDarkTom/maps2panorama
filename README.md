@@ -58,7 +58,15 @@ source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Run the app
+### 4. Setup env file
+
+```bash
+cp .env.example .env
+```
+
+You can obtain a Google Maps Platform API key [here](https://developers.google.com/maps/), the free tier will suffice (although you will need a valid payment method to create an account). Once you have your key, enter it into your `.env` file. Note that you might need to allow unsigned usage through the dashboard [here](https://console.cloud.google.com/google/maps-apis/credentials).
+
+### 5. Run the app
 
 ```bash
 python main.py
